@@ -6,9 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "cy:open": "npx cypress open",
-    "cy:run": "npx cypress run",
+    "cy:run": "npx cypress run --browser chrome",
     "cy:dashboard": "",
-    "cy:report": ""
+    "cy:report": "cypress run --record --key d4e5257d-718b-427c-9caa-fa07126d29a8"
   },
   "repository": {
     "type": "git",
@@ -22,9 +22,7 @@
   },
   "homepage": "",
   "devDependencies": {
-    "cypress": "^8.2.0"
-  },
-  "dependencies": {
+    "cypress": "^8.2.0",
     "faker": "^5.5.3"
   }
 }
