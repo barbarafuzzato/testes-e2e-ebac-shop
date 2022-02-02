@@ -37,6 +37,7 @@ context('Exercício - Teste End-To-End - Fluxo de Pedido', () => {
             dadosEndereco[1].telefone,
             dadosEndereco[1].email
             )
+        cy.get('.woocommerce-notice').should('contain', 'Obrigado. Seu pedido foi recebido.')
 
     });
 
